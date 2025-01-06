@@ -3,16 +3,19 @@
   "WorkspaceRootPath": "C:\\GitHub\\Chat_Program\\chat_program\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\continuousclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\workspace\\chat_program\\server\\Server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -34,63 +37,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 230,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Listener.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Listener.cs",
+              "RelativeDocumentMoniker": "..\\server\\Listener.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Listener.cs",
+              "RelativeToolTip": "..\\server\\Listener.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAswDgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T07:02:49.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Client.cs",
               "RelativeDocumentMoniker": "..\\client\\Client.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Client.cs",
               "RelativeToolTip": "..\\client\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T07:49:29.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ContinuousClient.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\ContinuousClient.cs",
               "RelativeDocumentMoniker": "..\\client\\ContinuousClient.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\client\\ContinuousClient.cs",
               "RelativeToolTip": "..\\client\\ContinuousClient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T07:49:28.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "client",
+              "DocumentIndex": 4,
+              "Title": "client.csproj",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\client.csproj",
               "RelativeDocumentMoniker": "..\\client\\client.csproj",
               "ToolTip": "C:\\GitHub\\Chat_Program\\client\\client.csproj",
               "RelativeToolTip": "..\\client\\client.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-24T07:49:26.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-24T07:49:26.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Server.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Server.cs",
               "RelativeDocumentMoniker": "..\\server\\Server.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Server.cs",
               "RelativeToolTip": "..\\server\\Server.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwA8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T07:49:24.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "client.csproj",
               "DocumentMoniker": "C:\\workspace\\chat_program\\client\\client.csproj",
               "RelativeDocumentMoniker": "..\\..\\..\\workspace\\chat_program\\client\\client.csproj",
@@ -102,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ContinuousClient.cs",
               "DocumentMoniker": "C:\\workspace\\chat_program\\client\\ContinuousClient.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\workspace\\chat_program\\client\\ContinuousClient.cs",
@@ -114,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\workspace\\chat_program\\client\\Client.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\workspace\\chat_program\\client\\Client.cs",
@@ -126,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Server.cs",
               "DocumentMoniker": "C:\\workspace\\chat_program\\server\\Server.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\workspace\\chat_program\\server\\Server.cs",
