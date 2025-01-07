@@ -1,0 +1,12 @@
+C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfoInputs.cache
+C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ServerCore.AssemblyInfo.cs
+C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ServerCore.csproj.CoreCompileInputs.cache
+C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ServerCore.sourcelink.json
+C:\GitHub\Chat_Program\ServerCore\bin\Debug\net8.0\ServerCore.deps.json
+C:\GitHub\Chat_Program\ServerCore\bin\Debug\net8.0\ServerCore.dll
+C:\GitHub\Chat_Program\ServerCore\bin\Debug\net8.0\ServerCore.pdb
+C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ServerCore.dll
+C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
+C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ServerCore.pdb
+C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using ServerCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,15 +15,15 @@ namespace server
     {
 
         Socket _listenSocket;
-        Action<Socket> _onAcceptHandlers; // 소켓을 받으면 실행하는 함수
+        Func<Session> _sessionFactory; // 클라이언트와 연결할 세션을 만들 함수
 
         // 리스너 초기화
-        public void Init(IPEndPoint endPoint,  Action<Socket> onAcceptHandler, int register = 10)
+        public void Init(IPEndPoint endPoint, Func<Session> sessionFactory, int register = 10)
         {
             // 리슨 소켓 생성
             _listenSocket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             // 수행할 함수 추가
-            _onAcceptHandlers += onAcceptHandler;
+            _sessionFactory = sessionFactory;
 
             // 리슨소켓 설정
             _listenSocket.Bind(endPoint);
@@ -63,8 +64,10 @@ namespace server
         {
             if (args.SocketError == SocketError.Success)
             {
-                // 소켓을 인자로 넣어 호출
-                _onAcceptHandlers.Invoke(args.AcceptSocket);
+                // 세션의 소켓을 인자로 넣어 호출
+                Session session = _sessionFactory.Invoke();
+                session.Init(args.AcceptSocket);
+                session.OnConnected(args.AcceptSocket.RemoteEndPoint);
 
             }
             else

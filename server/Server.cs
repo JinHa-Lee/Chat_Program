@@ -43,7 +43,7 @@ namespace Server
             IPAddress ipAddr = ipHost.AddressList[0];
             IPEndPoint endPoint = new IPEndPoint(ipAddr, 7777); //endPoint - ip, port 주소
 
-            _listener.Init(endPoint, chat_action);
+            _listener.Init(endPoint, () => { return new ClientSession(); });
             Console.WriteLine("Listening...");
 
             while (true) { } // 메인 프로그램이 종료되지 않도록 유지

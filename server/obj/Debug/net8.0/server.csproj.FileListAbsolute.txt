@@ -27,3 +27,7 @@ C:\GitHub\Chat_Program\server\obj\Debug\net8.0\server.pdb
 C:\GitHub\Chat_Program\server\obj\Debug\net8.0\server.genruntimeconfig.cache
 C:\GitHub\Chat_Program\server\obj\Debug\net8.0\ref\server.dll
 C:\GitHub\Chat_Program\server\obj\Debug\net8.0\server.sourcelink.json
+C:\GitHub\Chat_Program\server\bin\Debug\net8.0\ServerCore.dll
+C:\GitHub\Chat_Program\server\bin\Debug\net8.0\ServerCore.pdb
+C:\GitHub\Chat_Program\server\obj\Debug\net8.0\server.csproj.AssemblyReference.cache
+C:\GitHub\Chat_Program\server\obj\Debug\net8.0\server.csproj.Up2Date
