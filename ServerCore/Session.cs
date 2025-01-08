@@ -14,6 +14,8 @@ namespace ServerCore
         int _disconnected = 0;
         object _lock = new object();
 
+        RecvBuffer _recvBuffer = new RecvBuffer(65535);
+
         SocketAsyncEventArgs _sendArgs = new SocketAsyncEventArgs();
         SocketAsyncEventArgs _recvArgs = new SocketAsyncEventArgs();
         Queue<ArraySegment<byte>> _sendQueue = new Queue<ArraySegment<byte>>();
@@ -21,7 +23,7 @@ namespace ServerCore
 
         // server, client session에서 상속받을 기능 
         public abstract void OnConnected(EndPoint endPoint);
-        public abstract void OnRecv(ArraySegment<byte> buffer);
+        public abstract int OnRecv(ArraySegment<byte> buffer);
         public abstract void OnSend(int numOfBytes);
         public abstract void OnDisconnected(EndPoint endPoint);
 
@@ -139,7 +141,10 @@ namespace ServerCore
             if (_socket == null || _disconnected == 1)
                 return;
 
-            _recvArgs.SetBuffer(new byte[4096], 0 , 4096); // 4096 사이즈 버퍼설정
+            // receiveBuffer 초기화
+            _recvBuffer.Clean();
+            ArraySegment<byte> segment = _recvBuffer.WriteSegment;
+            _recvArgs.SetBuffer(segment.Array, segment.Offset, segment.Count); // 버퍼설정
 
             try
             {
@@ -157,26 +162,41 @@ namespace ServerCore
         {
             // Receive가 정상적으로 수행되었다면 호출되는 이벤트
 
-                // 전송된 바이트가 1이상이고 Success 상태 -> 정상통신
-                if (args.BytesTransferred > 0 && args.SocketError == SocketError.Success)
+            // 전송된 바이트가 1이상이고 Success 상태 -> 정상통신
+            if (args.BytesTransferred > 0 && args.SocketError == SocketError.Success)
+            {
+                try
                 {
-                    try
+                    if (_recvBuffer.OnWrite(args.BytesTransferred) == false) // 여유 크기 보다 큰 사이즈를 쓸려할 경우
                     {
-                        OnRecv(new ArraySegment<byte>(args.Buffer, args.Offset, args.BytesTransferred)); // receive 성공후 이벤트 호출
-                        RegisterRecv();
+                        Disconnect();
+                        return;
                     }
-                    catch (Exception ex)
+                    // 컨텐츠 쪽으로 데이터를 넘겨주고 얼마나 처리했는지 받는다
+                    int processLen = OnRecv(_recvBuffer.ReadSegment);
+                    if (processLen < 0 || _recvBuffer.DataSize < processLen) // 넘겨준 데이터가 없거나 버퍼의 데이터보다 작을경우
                     {
-                        Console.WriteLine($"OnSendCompleted Failed {ex}");
+                        Disconnect();
+                        return;
                     }
+                    // read 커서 이동
+                    if (_recvBuffer.OnRead(processLen)  == false) // 데이터 크기 보다 큰 사이즈를 읽으려할 경우
+                    {
+                        Disconnect();
+                        return;
+                    }
+                    RegisterRecv();
                 }
-                else
+                catch (Exception ex)
                 {
-                    Disconnect();
+                    Console.WriteLine($"OnSendCompleted Failed {ex}");
                 }
             }
-        
-
+            else
+            {
+                Disconnect();
+            }
+        }
         #endregion
 
     }

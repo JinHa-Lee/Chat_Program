@@ -21,10 +21,11 @@ namespace server
             Console.WriteLine($"OnDisconnected : {endPoint}");
         }
 
-        public override void OnRecv(ArraySegment<byte> buffer)
+        public override int OnRecv(ArraySegment<byte> buffer)
         {
             string receiveData = Encoding.UTF8.GetString(buffer.Array, buffer.Offset, buffer.Count);
             Console.WriteLine($"Received Data : {receiveData}");
+            return receiveData.Length;
         }
 
         public override void OnSend(int numOfBytes)

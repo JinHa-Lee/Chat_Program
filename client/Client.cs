@@ -53,11 +53,12 @@ namespace Client
             ServerSession session = new ServerSession();
             connector.Connect(endPoint, () => { return session; });
 
-            byte[] sendBuffer = Encoding.UTF8.GetBytes("Hello Server!");
             while (true) 
             {
+                Console.WriteLine("보낼 message를 입력해주세요.");
+                string msg = Console.ReadLine();
+                byte[] sendBuffer = Encoding.UTF8.GetBytes(msg);
                 session.Send(sendBuffer);
-                Thread.Sleep(500);
             } // 메인 프로그램이 종료되지 않도록 유지
 
 
