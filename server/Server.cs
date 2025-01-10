@@ -6,6 +6,12 @@ using System.Text;
 
 namespace Server
 {
+    class Packet
+    {
+        public ushort size;
+        public ushort id;
+    }
+
     class chat_Server
     {
         static Listener _listener = new Listener();

@@ -11,7 +11,7 @@ namespace ServerCore
         byte[] _buffer;
         int _usedSize = 0; // write 커서
 
-        public int FreeSize { get { return _usedSize; } }
+        public int FreeSize { get { return _buffer.Length - _usedSize; } }
 
         public SendBuffer(int chunkSize)
         {
