@@ -7,31 +7,7 @@ using MyClient;
 using ServerCore;
 
 namespace Client
-{
-    class Packet
-    {
-        public ushort size;
-        public ushort packetId;
-    }
-
-    class PlayerInfo : Packet
-    {
-        public long playerId;
-    }
-
-    class PacketValue : Packet
-    {
-        public int hp;
-        public int value;
-    }
-
-    public enum PacketID
-    {
-        Unknown = 0,
-        PlayerInfo = 1,
-        PlayerValue = 2,
-    }
-
+{ 
     class chat_Client
     {
 
@@ -80,39 +56,13 @@ namespace Client
 
             while (true) 
             {
-                Console.WriteLine("숫자를 입력해주세요.");
+                Console.WriteLine("Player Name을 입력해주세요.");
                 string msg = Console.ReadLine();
-                long input;
-                try
-                {
-                    input = long.Parse(msg);
-                }
-                catch
-                {
-                    Console.WriteLine("잘못된 입력입니다.");
-                    continue;
-                }
-                PlayerInfo packet = new PlayerInfo() { size = 12, packetId = (ushort)PacketID.PlayerInfo, playerId = input };
-                ArraySegment<byte> segment = SendBufferHelper.Open(4096);
-                byte[] sizeBuffer = BitConverter.GetBytes(packet.size);
-                byte[] packetIdBuffer = BitConverter.GetBytes(packet.packetId);
-                byte[] inputBuffer = BitConverter.GetBytes(packet.playerId);
 
-                ushort count = 0;
-                bool success = true;
-                success = BitConverter.TryWriteBytes(new Span<byte>(segment.Array, segment.Offset, segment.Count), packet.size);
-                //Array.Copy(sizeBuffer, 0, segment.Array, segment.Offset + count, sizeBuffer.Length);
-                count += sizeof(ushort);
-                success = BitConverter.TryWriteBytes(new Span<byte>(segment.Array, segment.Offset + count, segment.Count - count), packet.packetId);
-                //Array.Copy(packetIdBuffer, 0, segment.Array, segment.Offset + count, packetIdBuffer.Length);
-                count += sizeof(ushort);
-                success = BitConverter.TryWriteBytes(new Span<byte>(segment.Array, segment.Offset + count, segment.Count - count), packet.playerId);
-                //Array.Copy(inputBuffer, 0, segment.Array, segment.Offset + count, inputBuffer.Length);
-                count += sizeof(long);
-                ArraySegment<byte> sendBuffer = SendBufferHelper.Close(count);
+                PlayerInfo packet = new PlayerInfo() {playerId = 121, playerName = msg };
+                ArraySegment<byte> sendBuffer = packet.Write();
 
-                if (success)
-                    session.Send(sendBuffer);
+                session.Send(sendBuffer);
             } // 메인 프로그램이 종료되지 않도록 유지
 
 
