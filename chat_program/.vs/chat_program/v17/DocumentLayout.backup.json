@@ -3,13 +3,37 @@
   "WorkspaceRootPath": "C:\\GitHub\\Chat_Program\\chat_program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\serversession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{676F68F3-C100-4600-B34A-2D74FA954ECF}|..\\PacketGenerator\\PacketGenerator.csproj|c:\\github\\chat_program\\packetgenerator\\packetgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{676F68F3-C100-4600-B34A-2D74FA954ECF}|..\\PacketGenerator\\PacketGenerator.csproj|c:\\github\\chat_program\\packetgenerator\\pdl.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E49D7341-B15C-4FDF-B297-097F13633F26}|..\\ServerCore\\ServerCore.csproj|c:\\github\\chat_program\\servercore\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\packets\\serversession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\packets\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E49D7341-B15C-4FDF-B297-097F13633F26}|..\\ServerCore\\ServerCore.csproj|c:\\github\\chat_program\\servercore\\recvbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -18,22 +42,7 @@
       "AbsoluteMoniker": "D:0:0:{E49D7341-B15C-4FDF-B297-097F13633F26}|..\\ServerCore\\ServerCore.csproj|c:\\github\\chat_program\\servercore\\servercore.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\continuousclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E49D7341-B15C-4FDF-B297-097F13633F26}|..\\ServerCore\\ServerCore.csproj|c:\\github\\chat_program\\servercore\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E49D7341-B15C-4FDF-B297-097F13633F26}|..\\ServerCore\\ServerCore.csproj|c:\\github\\chat_program\\servercore\\sendbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -46,16 +55,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 230,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClientSession.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Packets\\ClientSession.cs",
+              "RelativeDocumentMoniker": "..\\server\\Packets\\ClientSession.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Packets\\ClientSession.cs",
+              "RelativeToolTip": "..\\server\\Packets\\ClientSession.cs",
+              "ViewState": "AgIAAK0AAAAAAAAAAAAUwL4AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T07:52:36.017Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ServerSession.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Packets\\ServerSession.cs",
+              "RelativeDocumentMoniker": "..\\client\\Packets\\ServerSession.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Packets\\ServerSession.cs",
+              "RelativeToolTip": "..\\client\\Packets\\ServerSession.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAIwCAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T07:52:48.774Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "server",
+              "DocumentIndex": 0,
+              "Title": "PacketGenerator.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PacketGenerator.cs",
+              "RelativeDocumentMoniker": "..\\PacketGenerator\\PacketGenerator.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PacketGenerator.cs",
+              "RelativeToolTip": "..\\PacketGenerator\\PacketGenerator.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAvwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T07:03:44.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "client",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\client.csproj",
+              "RelativeDocumentMoniker": "..\\client\\client.csproj",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\client.csproj",
+              "RelativeToolTip": "..\\client\\client.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-12T06:24:25.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PDL.xml",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PDL.xml",
+              "RelativeDocumentMoniker": "..\\PacketGenerator\\PDL.xml",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PDL.xml",
+              "RelativeToolTip": "..\\PacketGenerator\\PDL.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-12T06:24:43.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "server.csproj",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\server.csproj",
               "RelativeDocumentMoniker": "..\\server\\server.csproj",
               "ToolTip": "C:\\GitHub\\Chat_Program\\server\\server.csproj",
@@ -67,71 +143,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RecvBuffer.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\ServerCore\\RecvBuffer.cs",
-              "RelativeDocumentMoniker": "..\\ServerCore\\RecvBuffer.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\ServerCore\\RecvBuffer.cs",
-              "RelativeToolTip": "..\\ServerCore\\RecvBuffer.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAIA3wDsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T05:15:48.519Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServerCore",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\ServerCore\\ServerCore.csproj",
-              "RelativeDocumentMoniker": "..\\ServerCore\\ServerCore.csproj",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\ServerCore\\ServerCore.csproj",
-              "RelativeToolTip": "..\\ServerCore\\ServerCore.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-07T07:54:28.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ServerSession.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\ServerSession.cs",
-              "RelativeDocumentMoniker": "..\\client\\ServerSession.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\ServerSession.cs",
-              "RelativeToolTip": "..\\client\\ServerSession.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAADwv2kAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T07:52:48.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientSession.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\ClientSession.cs",
-              "RelativeDocumentMoniker": "..\\server\\ClientSession.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\ClientSession.cs",
-              "RelativeToolTip": "..\\server\\ClientSession.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T07:52:36.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\ServerCore\\Session.cs",
               "RelativeDocumentMoniker": "..\\ServerCore\\Session.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\ServerCore\\Session.cs",
               "RelativeToolTip": "..\\ServerCore\\Session.cs",
-              "ViewState": "AgIAANEAAAAAAAAAAAAqwOsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAqwOsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-07T06:36:12.288Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Connector.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Connector.cs",
               "RelativeDocumentMoniker": "..\\client\\Connector.cs",
@@ -144,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "Listener.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Listener.cs",
               "RelativeDocumentMoniker": "..\\server\\Listener.cs",
@@ -157,45 +182,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Client.cs",
               "RelativeDocumentMoniker": "..\\client\\Client.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Client.cs",
               "RelativeToolTip": "..\\client\\Client.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAYwEAAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEEAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T07:49:29.153Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ContinuousClient.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\ContinuousClient.cs",
-              "RelativeDocumentMoniker": "..\\client\\ContinuousClient.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\ContinuousClient.cs",
-              "RelativeToolTip": "..\\client\\ContinuousClient.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAQwEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-24T07:49:28.404Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SendBuffer.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\ServerCore\\SendBuffer.cs",
-              "RelativeDocumentMoniker": "..\\ServerCore\\SendBuffer.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\ServerCore\\SendBuffer.cs",
-              "RelativeToolTip": "..\\ServerCore\\SendBuffer.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAIA9wD0AAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T05:46:32.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "Server.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Server.cs",
               "RelativeDocumentMoniker": "..\\server\\Server.cs",
@@ -205,6 +205,54 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T07:49:24.503Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ServerCore",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\ServerCore\\ServerCore.csproj",
+              "RelativeDocumentMoniker": "..\\ServerCore\\ServerCore.csproj",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\ServerCore\\ServerCore.csproj",
+              "RelativeToolTip": "..\\ServerCore\\ServerCore.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-07T07:54:28.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RecvBuffer.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\ServerCore\\RecvBuffer.cs",
+              "RelativeDocumentMoniker": "..\\ServerCore\\RecvBuffer.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\ServerCore\\RecvBuffer.cs",
+              "RelativeToolTip": "..\\ServerCore\\RecvBuffer.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAIA3wDsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T05:15:48.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ContinuousClient.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\ContinuousClient.cs",
+              "RelativeDocumentMoniker": "..\\client\\ContinuousClient.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\ContinuousClient.cs",
+              "RelativeToolTip": "..\\client\\ContinuousClient.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAQwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-24T07:49:28.404Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SendBuffer.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\ServerCore\\SendBuffer.cs",
+              "RelativeDocumentMoniker": "..\\ServerCore\\SendBuffer.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\ServerCore\\SendBuffer.cs",
+              "RelativeToolTip": "..\\ServerCore\\SendBuffer.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAIA9wD0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-08T05:46:32.209Z"
             }
           ]
         }
