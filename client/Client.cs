@@ -60,10 +60,10 @@ namespace Client
                 string msg = Console.ReadLine();
 
                 PlayerInfo packet = new PlayerInfo() {playerId = 121, playerName = msg };
-                packet.skills.Add(new PlayerInfo.SkillInfo() { id = 11, level = 1, duration = 3.0f });
-                packet.skills.Add(new PlayerInfo.SkillInfo() { id = 12, level = 1, duration = 13.0f });
-                packet.skills.Add(new PlayerInfo.SkillInfo() { id = 13, level = 1, duration = 8.0f });
-                packet.skills.Add(new PlayerInfo.SkillInfo() { id = 14, level = 1, duration = 5.0f });
+                packet.skillInfos.Add(new PlayerInfo.SkillInfo() { id = 11, level = 1, duration = 3.0f });
+                packet.skillInfos.Add(new PlayerInfo.SkillInfo() { id = 12, level = 1, duration = 13.0f });
+                packet.skillInfos.Add(new PlayerInfo.SkillInfo() { id = 13, level = 1, duration = 8.0f });
+                packet.skillInfos.Add(new PlayerInfo.SkillInfo() { id = 14, level = 1, duration = 5.0f });
 
 
                 ArraySegment<byte> sendBuffer = packet.Write();

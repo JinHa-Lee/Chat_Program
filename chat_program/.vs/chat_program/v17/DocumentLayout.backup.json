@@ -3,37 +3,37 @@
   "WorkspaceRootPath": "C:\\GitHub\\Chat_Program\\chat_program\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\packets\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\packets\\serversession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\GitHub\\Chat_Program\\PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{676F68F3-C100-4600-B34A-2D74FA954ECF}|..\\PacketGenerator\\PacketGenerator.csproj|c:\\github\\chat_program\\packetgenerator\\packetgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{676F68F3-C100-4600-B34A-2D74FA954ECF}|..\\PacketGenerator\\PacketGenerator.csproj|c:\\github\\chat_program\\packetgenerator\\pdl.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E49D7341-B15C-4FDF-B297-097F13633F26}|..\\ServerCore\\ServerCore.csproj|c:\\github\\chat_program\\servercore\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\packets\\serversession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{676F68F3-C100-4600-B34A-2D74FA954ECF}|..\\PacketGenerator\\PacketGenerator.csproj|c:\\github\\chat_program\\packetgenerator\\packetformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\packets\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E49D7341-B15C-4FDF-B297-097F13633F26}|..\\ServerCore\\ServerCore.csproj|c:\\github\\chat_program\\servercore\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\listener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E49D7341-B15C-4FDF-B297-097F13633F26}|..\\ServerCore\\ServerCore.csproj|c:\\github\\chat_program\\servercore\\recvbuffer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -55,121 +55,54 @@
       "DocumentGroups": [
         {
           "DockedWidth": 230,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClientSession.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Packets\\ClientSession.cs",
-              "RelativeDocumentMoniker": "..\\server\\Packets\\ClientSession.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Packets\\ClientSession.cs",
-              "RelativeToolTip": "..\\server\\Packets\\ClientSession.cs",
-              "ViewState": "AgIAAK0AAAAAAAAAAAAUwL4AAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T07:52:36.017Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServerSession.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Packets\\ServerSession.cs",
-              "RelativeDocumentMoniker": "..\\client\\Packets\\ServerSession.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Packets\\ServerSession.cs",
-              "RelativeToolTip": "..\\client\\Packets\\ServerSession.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAIwCAAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T07:52:48.774Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PacketGenerator.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PacketGenerator.cs",
-              "RelativeDocumentMoniker": "..\\PacketGenerator\\PacketGenerator.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PacketGenerator.cs",
-              "RelativeToolTip": "..\\PacketGenerator\\PacketGenerator.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAvwD0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "GenPackets.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs",
+              "RelativeDocumentMoniker": "..\\PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs",
+              "RelativeToolTip": "..\\PacketGenerator\\bin\\Debug\\net8.0\\GenPackets.cs",
+              "ViewState": "AgIAAMYAAAAAAAAAAAAQwMkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-12T07:03:44.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "client",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\client.csproj",
-              "RelativeDocumentMoniker": "..\\client\\client.csproj",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\client.csproj",
-              "RelativeToolTip": "..\\client\\client.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-12T06:24:25.788Z",
+              "WhenOpened": "2025-01-13T07:01:31.629Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PDL.xml",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PDL.xml",
-              "RelativeDocumentMoniker": "..\\PacketGenerator\\PDL.xml",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PDL.xml",
-              "RelativeToolTip": "..\\PacketGenerator\\PDL.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-01-12T06:24:43.051Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "server.csproj",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\server.csproj",
-              "RelativeDocumentMoniker": "..\\server\\server.csproj",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\server.csproj",
-              "RelativeToolTip": "..\\server\\server.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-11T05:47:42.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Session.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\ServerCore\\Session.cs",
-              "RelativeDocumentMoniker": "..\\ServerCore\\Session.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\ServerCore\\Session.cs",
-              "RelativeToolTip": "..\\ServerCore\\Session.cs",
-              "ViewState": "AgIAAN0AAAAAAAAAAAAqwOsAAAANAAAAAAAAAA==",
+              "Title": "ServerSession.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Packets\\ServerSession.cs",
+              "RelativeDocumentMoniker": "..\\client\\Packets\\ServerSession.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Packets\\ServerSession.cs",
+              "RelativeToolTip": "..\\client\\Packets\\ServerSession.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwBoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T06:36:12.288Z",
+              "WhenOpened": "2025-01-13T06:19:45.31Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Connector.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Connector.cs",
-              "RelativeDocumentMoniker": "..\\client\\Connector.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Connector.cs",
-              "RelativeToolTip": "..\\client\\Connector.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
+              "Title": "PacketFormat.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PacketFormat.cs",
+              "RelativeDocumentMoniker": "..\\PacketGenerator\\PacketFormat.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PacketFormat.cs",
+              "RelativeToolTip": "..\\PacketGenerator\\PacketFormat.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAwKwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T06:10:41.279Z",
+              "WhenOpened": "2025-01-13T03:51:30.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Listener.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Listener.cs",
               "RelativeDocumentMoniker": "..\\server\\Listener.cs",
@@ -177,20 +110,45 @@
               "RelativeToolTip": "..\\server\\Listener.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAiwDMAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T07:02:49.468Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-06T07:02:49.468Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Client.cs",
               "RelativeDocumentMoniker": "..\\client\\Client.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Client.cs",
               "RelativeToolTip": "..\\client\\Client.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAEEAAABfAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAYwD4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T07:49:29.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PDL.xml",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PDL.xml",
+              "RelativeDocumentMoniker": "..\\PacketGenerator\\PDL.xml",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PDL.xml",
+              "RelativeToolTip": "..\\PacketGenerator\\PDL.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-13T06:22:58.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientSession.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Packets\\ClientSession.cs",
+              "RelativeDocumentMoniker": "..\\server\\Packets\\ClientSession.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Packets\\ClientSession.cs",
+              "RelativeToolTip": "..\\server\\Packets\\ClientSession.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAowIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T07:52:36.017Z",
               "EditorCaption": ""
             },
             {
@@ -201,10 +159,47 @@
               "RelativeDocumentMoniker": "..\\server\\Server.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Server.cs",
               "RelativeToolTip": "..\\server\\Server.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwCcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-24T07:49:24.503Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PacketGenerator.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PacketGenerator.cs",
+              "RelativeDocumentMoniker": "..\\PacketGenerator\\PacketGenerator.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PacketGenerator.cs",
+              "RelativeToolTip": "..\\PacketGenerator\\PacketGenerator.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAIIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T07:03:44.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Connector.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Connector.cs",
+              "RelativeDocumentMoniker": "..\\client\\Connector.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Connector.cs",
+              "RelativeToolTip": "..\\client\\Connector.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T06:10:41.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Session.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\ServerCore\\Session.cs",
+              "RelativeDocumentMoniker": "..\\ServerCore\\Session.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\ServerCore\\Session.cs",
+              "RelativeToolTip": "..\\ServerCore\\Session.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAqwOsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T06:36:12.288Z"
             },
             {
               "$type": "Document",

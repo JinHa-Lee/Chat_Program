@@ -10,4 +10,13 @@
 			<float name ="duration"/>
 		</list>
 	</packet>
+	<packet name="PlayerChat">
+		<long name ="playerId"/>
+		<string name ="playerName"/>
+		<list name="ChatInfo">
+			<int name ="ChatId"/>
+		</list>
+		<string name ="contents"/>
+		<byte name ="ChatByte"/>
+	</packet>
 </PDL>
