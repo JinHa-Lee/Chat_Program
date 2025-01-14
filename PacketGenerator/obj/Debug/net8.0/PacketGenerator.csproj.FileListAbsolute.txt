@@ -13,3 +13,8 @@ C:\GitHub\Chat_Program\PacketGenerator\obj\Debug\net8.0\refint\PacketGenerator.d
 C:\GitHub\Chat_Program\PacketGenerator\obj\Debug\net8.0\PacketGenerator.pdb
 C:\GitHub\Chat_Program\PacketGenerator\obj\Debug\net8.0\PacketGenerator.genruntimeconfig.cache
 C:\GitHub\Chat_Program\PacketGenerator\obj\Debug\net8.0\ref\PacketGenerator.dll
+C:\GitHub\Chat_Program\PacketGenerator\bin\net8.0\PacketGenerator.exe
+C:\GitHub\Chat_Program\PacketGenerator\bin\net8.0\PacketGenerator.deps.json
+C:\GitHub\Chat_Program\PacketGenerator\bin\net8.0\PacketGenerator.runtimeconfig.json
+C:\GitHub\Chat_Program\PacketGenerator\bin\net8.0\PacketGenerator.dll
+C:\GitHub\Chat_Program\PacketGenerator\bin\net8.0\PacketGenerator.pdb

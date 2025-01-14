@@ -16,6 +16,7 @@ namespace PacketGenerator
 
         static void Main(string[] args)
         {
+            string pdlPath = "../PDL.xml";
 
             XmlReaderSettings settings = new XmlReaderSettings()
             {
@@ -23,7 +24,11 @@ namespace PacketGenerator
                 IgnoreWhitespace = true, // 스페이스바 무시
             };
 
-            using (XmlReader r = XmlReader.Create("../../../PDL.xml", settings))
+            // input 인자를 받으면 해당 값을 경로로 사용
+            if (args.Length >= 1)
+                pdlPath = args[0];
+
+            using (XmlReader r = XmlReader.Create(pdlPath, settings))
             {
                 r.MoveToContent(); // Header를 건너 뛰고 내용부터 시작
 

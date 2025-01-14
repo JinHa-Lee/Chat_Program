@@ -22,13 +22,11 @@ public enum PacketID
 {{
     {0}
 }}
-abstract class Packet
+public interface IPacket
 {{
-    public ushort size;
-    public ushort packetId;
-
-    public abstract ArraySegment<byte> Write();
-    public abstract void Read(ArraySegment<byte> segment);
+	ushort Protocol {{ get; }}
+	void Read(ArraySegment<byte> segment);
+	ArraySegment<byte> Write();
 }}
 {1}
 ";
@@ -49,12 +47,14 @@ abstract class Packet
         // 패킷의 내용을 읽는 부분에서 size와 packetId는 굳이 추출하지 않는다
         public static string packetFormat =
 @"
-class {0} : Packet
+class {0} : IPacket
 {{
 
     {1}
 
-    public override void Read(ArraySegment<byte> segment)
+    public ushort Protocol {{ get {{ return (ushort)PacketID.{0}; }} }}
+
+    public void Read(ArraySegment<byte> segment)
     {{
         ReadOnlySpan<byte> s = new ReadOnlySpan<byte>(segment.Array, segment.Offset, segment.Count);
         ushort count = 0;
@@ -63,7 +63,7 @@ class {0} : Packet
         {2}
     }}
 
-    public override ArraySegment<byte> Write()
+    public ArraySegment<byte> Write()
     {{
         ArraySegment<byte> segment = SendBufferHelper.Open(4096);
         ushort count = 0;

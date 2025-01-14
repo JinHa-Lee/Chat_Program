@@ -16,20 +16,23 @@ namespace server
         PlayerChat = 2,
 
     }
-    abstract class Packet
-    {
-        public ushort size;
-        public ushort packetId;
 
-        public abstract ArraySegment<byte> Write();
-        public abstract void Read(ArraySegment<byte> segment);
+    interface IPacket
+    {
+        // OnRecvPacket 에서 switch문의 비효율성으로 인한 구조 변경
+        ushort PacketId { get; }
+        ArraySegment<byte> Write();
+        void Read(ArraySegment<byte> segment);
     }
 
-    class PlayerInfo : Packet
+    class PlayerInfo : IPacket
     {
 
         public long playerId;
         public string playerName;
+
+        public ushort PacketId { get { return (ushort)PacketID.PlayerInfo; } }
+
         public class SkillInfo
         {
             public int id;
@@ -63,7 +66,7 @@ namespace server
         }
         public List<SkillInfo> skillInfos = new List<SkillInfo>();
 
-        public override void Read(ArraySegment<byte> segment)
+        public void Read(ArraySegment<byte> segment)
         {
             ReadOnlySpan<byte> s = new ReadOnlySpan<byte>(segment.Array, segment.Offset, segment.Count);
             ushort count = 0;
@@ -86,7 +89,7 @@ namespace server
             }
         }
 
-        public override ArraySegment<byte> Write()
+        public ArraySegment<byte> Write()
         {
             ArraySegment<byte> segment = SendBufferHelper.Open(4096);
             ushort count = 0;
@@ -113,11 +116,14 @@ namespace server
             return SendBufferHelper.Close(count);
         }
     }
-    class PlayerChat : Packet
+    class PlayerChat : IPacket
     {
 
         public long playerId;
         public string playerName;
+
+        public ushort PacketId { get { return (ushort)PacketID.PlayerChat; } }
+
         public class ChatInfo
         {
             public int ChatId;
@@ -143,7 +149,7 @@ namespace server
         public string contents;
         public byte ChatByte;
 
-        public override void Read(ArraySegment<byte> segment)
+        public void Read(ArraySegment<byte> segment)
         {
             ReadOnlySpan<byte> s = new ReadOnlySpan<byte>(segment.Array, segment.Offset, segment.Count);
             ushort count = 0;
@@ -172,7 +178,7 @@ namespace server
             count += sizeof(byte);
         }
 
-        public override ArraySegment<byte> Write()
+        public ArraySegment<byte> Write()
         {
             ArraySegment<byte> segment = SendBufferHelper.Open(4096);
             ushort count = 0;
@@ -222,27 +228,7 @@ namespace server
 
         public override void OnRecvPacket(ArraySegment<byte> buffer)
         {
-            ushort count = 0;
-            ushort size = BitConverter.ToUInt16(buffer.Array, buffer.Offset);
-            count += sizeof(ushort);
-            ushort packetId = BitConverter.ToUInt16(buffer.Array, buffer.Offset + count);
-            count += sizeof(ushort);
-            Console.WriteLine($"PacketId : {packetId} \nPacketSize : {size}");
-
-            switch((PacketID)packetId)
-            {
-                case PacketID.PlayerInfo:
-                    PlayerInfo info = new PlayerInfo();
-                    info.Read(buffer);                    
-                    Console.WriteLine($"PlayerId : {info.playerId}\nPlayerName : {info.playerName}");
-
-                    foreach(PlayerInfo.SkillInfo skill in info.skillInfos)
-                        Console.WriteLine($"Skill({skill.id})({skill.level})({skill.duration})");
-
-                    break;
-                case PacketID.PlayerChat:
-                    break;
-            }
+            PacketManager.Instance.OnRecvPacket(this,buffer);
 
         }
 
