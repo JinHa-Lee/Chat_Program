@@ -1,25 +1,33 @@
 ﻿using ServerCore;
+using server;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace server
+
+
+class PacketHandler
 {
-    internal class PacketHandler
+    // 패킷을 받게되면 실행할 기능관리
+
+    public static void C_PlayerInfoHandler(PacketSession session, IPacket packet)
     {
-        // 패킷을 받게되면 실행할 기능관리
+        C_PlayerInfo p = packet as C_PlayerInfo;
 
-        public static void PlayerInfoHandler(PacketSession session, IPacket packet)
-        {
-            PlayerInfo p = packet as PlayerInfo;
+        Console.WriteLine($"PlayerId : {p.playerId}\nPlayerName : {p.playerName}");
 
-            Console.WriteLine($"PlayerId : {p.playerId}\nPlayerName : {p.playerName}");
-
-            foreach (PlayerInfo.SkillInfo skill in p.skillInfos)
-                Console.WriteLine($"Skill({skill.id})({skill.level})({skill.duration})");
-        }
-
+        foreach (C_PlayerInfo.SkillInfo skill in p.skillInfos)
+            Console.WriteLine($"Skill({skill.id})({skill.level})({skill.duration})");
     }
+
+    public static void C_PlayerChatHandler(PacketSession session, IPacket packet)
+    {
+        C_PlayerInfo p = packet as C_PlayerInfo;
+
+        Console.WriteLine($"PlayerId : {p.playerId}\nPlayerName : {p.playerName}");
+
+        foreach (C_PlayerInfo.SkillInfo skill in p.skillInfos)
+            Console.WriteLine($"Skill({skill.id})({skill.level})({skill.duration})");
+    }
+
 }
+

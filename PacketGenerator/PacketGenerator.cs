@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
+﻿using System.Xml;
 
 namespace PacketGenerator
 {
@@ -13,6 +8,8 @@ namespace PacketGenerator
         static ushort packetId;
         static string packetEnums;
 
+        static string clientRegister;
+        static string serverRegister;
 
         static void Main(string[] args)
         {
@@ -40,6 +37,16 @@ namespace PacketGenerator
                 // 생성된 패킷기능을 파일로 저장
                 string fileText = string.Format(PacketFormat.flieFormat, packetEnums, _genPackets);
                 File.WriteAllText("GenPackets.cs", fileText);
+                if (clientRegister != null)
+                {
+                    string clientmanagerText = string.Format(PacketFormat.managerFormat, clientRegister);
+                    File.WriteAllText("ClientPacketManager.cs", clientmanagerText);
+                }
+                if (serverRegister != null)
+                {
+                    string servermanagerText = string.Format(PacketFormat.managerFormat, serverRegister);
+                    File.WriteAllText("ServerPacketManager.cs", servermanagerText);
+                }
             }
         }
 
@@ -66,6 +73,11 @@ namespace PacketGenerator
 
             _genPackets += string.Format(PacketFormat.packetFormat, packetName, result_t.Item1, result_t.Item2, result_t.Item3);
             packetEnums += string.Format(PacketFormat.packetEnumFormat, packetName, ++packetId) + Environment.NewLine + "\t";
+
+            if (packetName.StartsWith("S_") || packetName.StartsWith("s_"))
+                clientRegister += string.Format(PacketFormat.managerRegisterFormat, packetName) + Environment.NewLine;
+            else
+                serverRegister += string.Format(PacketFormat.managerRegisterFormat, packetName) + Environment.NewLine;
         }
 
         public static Tuple<string, string, string> ParseMembers(XmlReader r)
@@ -163,7 +175,7 @@ namespace PacketGenerator
                 t.Item2,
                 t.Item3
                 );
-            
+
             string readCode = string.Format(PacketFormat.readListFormat,
                 FirstCharToUpper(listName),
                 FirstCharToLower(listName));

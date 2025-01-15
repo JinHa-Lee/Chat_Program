@@ -24,7 +24,7 @@ public enum PacketID
 }}
 public interface IPacket
 {{
-	ushort Protocol {{ get; }}
+	ushort PacketId {{ get; }}
 	void Read(ArraySegment<byte> segment);
 	ArraySegment<byte> Write();
 }}
@@ -52,7 +52,7 @@ class {0} : IPacket
 
     {1}
 
-    public ushort Protocol {{ get {{ return (ushort)PacketID.{0}; }} }}
+    public ushort PacketId {{ get {{ return (ushort)PacketID.{0}; }} }}
 
     public void Read(ArraySegment<byte> segment)
     {{
@@ -178,6 +178,61 @@ foreach ({0} {1} in this.{1}s)
 {{
     success &= {1}.Write(s, ref count);
 }}";
+        // {0} 패킷 등록
+        public static string managerFormat =
+@"using ServerCore;
+using System;
+using System.Collections.Generic;
+
+public class PacketManager
+{{
+    #region Singleton
+    static PacketManager _instance = new PacketManager();
+    public static PacketManager Instance {{ get {{ return _instance; }} }}
+    #endregion
+
+    PacketManager()
+    {{
+        Register();
+    }}
+
+    Dictionary<ushort, Action<PacketSession, ArraySegment<byte>>> _onRecv = new Dictionary<ushort, Action<PacketSession, ArraySegment<byte>>>();
+    Dictionary<ushort, Action<PacketSession, IPacket>> _handler = new Dictionary<ushort, Action<PacketSession, IPacket>>();
+
+
+    public void Register()
+    {{
+{0}
+    }}
+
+    public void OnRecvPacket(PacketSession session,ArraySegment<byte> buffer)
+    {{
+        ushort count = 0;
+        ushort size = BitConverter.ToUInt16(buffer.Array, buffer.Offset);
+        count += sizeof(ushort);
+        ushort packetId = BitConverter.ToUInt16(buffer.Array, buffer.Offset + count);
+        count += sizeof(ushort);
+
+        Action<PacketSession, ArraySegment<byte>> action = null;
+        if (_onRecv.TryGetValue(packetId, out action))
+            action.Invoke(session, buffer);
+    }}
+
+    void MakePacket<T>(PacketSession session, ArraySegment<byte>buffer) where T : IPacket, new()
+    {{
+        T pkt = new T();
+        pkt.Read(buffer);
+
+        Action<PacketSession, IPacket> action = null;
+        if (_handler.TryGetValue(pkt.PacketId, out action))
+            action.Invoke(session, pkt);
+    }}
+}}
+";
+        // {0} 패킷 이름
+        public static string managerRegisterFormat =
+@"            _onRecv.Add((ushort)PacketID.{0}, MakePacket<{0}>);
+            _handler.Add((ushort)PacketID.{0}, PacketHandler.{0}Handler);";
 
     }
 }

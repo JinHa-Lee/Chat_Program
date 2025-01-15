@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!-- PDL(Packet Definition List)-->
+<!-- S_~~ 패킷은 server > client 패킷-->
+<!-- C_~~ 패킷은 client > server 패킷-->
 <PDL>
-	<packet name="PlayerInfo">
+	<packet name="C_PlayerInfo">
 		<long name ="playerId"/>
 		<string name ="playerName"/>
 		<list name="SkillInfo">
@@ -10,7 +12,16 @@
 			<float name ="duration"/>
 		</list>
 	</packet>
-	<packet name="PlayerChat">
+	<packet name="C_PlayerChat">
+		<long name ="playerId"/>
+		<string name ="playerName"/>
+		<list name="ChatInfo">
+			<int name ="ChatId"/>
+		</list>
+		<string name ="contents"/>
+		<byte name ="ChatByte"/>
+	</packet>
+	<packet name="S_BroadcastChat">
 		<long name ="playerId"/>
 		<string name ="playerName"/>
 		<list name="ChatInfo">
