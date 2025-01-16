@@ -12,8 +12,9 @@ class PacketHandler
     public static void S_BroadcastChatHandler(PacketSession session, IPacket packet)
     {
         S_BroadcastChat p = packet as S_BroadcastChat;
+        ServerSession _session = session as ServerSession;
 
-        Console.WriteLine($"PlayerId : {p.playerId}\nPlayerName : {p.playerName}");
+        Console.WriteLine($"PlayerId : {p.playerId} \nPlayerName : {p.playerName} \nContents : {p.contents}");
     }
 
 

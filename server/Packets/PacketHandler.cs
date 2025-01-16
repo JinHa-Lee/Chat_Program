@@ -9,24 +9,14 @@ class PacketHandler
 {
     // 패킷을 받게되면 실행할 기능관리
 
-    public static void C_PlayerInfoHandler(PacketSession session, IPacket packet)
-    {
-        C_PlayerInfo p = packet as C_PlayerInfo;
-
-        Console.WriteLine($"PlayerId : {p.playerId}\nPlayerName : {p.playerName}");
-
-        foreach (C_PlayerInfo.SkillInfo skill in p.skillInfos)
-            Console.WriteLine($"Skill({skill.id})({skill.level})({skill.duration})");
-    }
-
     public static void C_PlayerChatHandler(PacketSession session, IPacket packet)
     {
-        C_PlayerInfo p = packet as C_PlayerInfo;
+        ClientSession clientSession = session as ClientSession;
+        C_PlayerChat p = packet as C_PlayerChat;
 
-        Console.WriteLine($"PlayerId : {p.playerId}\nPlayerName : {p.playerName}");
-
-        foreach (C_PlayerInfo.SkillInfo skill in p.skillInfos)
-            Console.WriteLine($"Skill({skill.id})({skill.level})({skill.duration})");
+        if (clientSession.Room == null)
+            return;
+        clientSession.Room.Broadcast(clientSession, p);
     }
 
 }

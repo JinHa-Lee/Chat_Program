@@ -4,6 +4,7 @@ using System.Net.Sockets;
 using System.Text;
 using client;
 using MyClient;
+using server;
 using ServerCore;
 
 namespace Client
@@ -51,24 +52,23 @@ namespace Client
 
 
             Connector connector = new Connector();
-            ServerSession session = new ServerSession();
-            connector.Connect(endPoint, () => { return session; });
+            connector.Connect(endPoint, () => { return SessionManager.Instance.Generate(); });
 
             while (true) 
             {
-                Console.WriteLine("Player Name을 입력해주세요.");
-                string msg = Console.ReadLine();
+                //Console.WriteLine("contents를 입력해주세요.");
+                //string msg = Console.ReadLine();
 
-                PlayerInfo packet = new PlayerInfo() {playerId = 121, playerName = msg };
-                packet.skillInfos.Add(new PlayerInfo.SkillInfo() { id = 11, level = 1, duration = 3.0f });
-                packet.skillInfos.Add(new PlayerInfo.SkillInfo() { id = 12, level = 1, duration = 13.0f });
-                packet.skillInfos.Add(new PlayerInfo.SkillInfo() { id = 13, level = 1, duration = 8.0f });
-                packet.skillInfos.Add(new PlayerInfo.SkillInfo() { id = 14, level = 1, duration = 5.0f });
+                try
+                {
+                    SessionManager.Instance.SendForEach();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.ToString());
+                }
 
-
-                ArraySegment<byte> sendBuffer = packet.Write();
-
-                session.Send(sendBuffer);
+                Thread.Sleep(500);
             } // 메인 프로그램이 종료되지 않도록 유지
 
 
