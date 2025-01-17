@@ -19,7 +19,8 @@ namespace server
             Console.WriteLine($"OnConnected : {endPoint}");
 
             // 연결과 동시에 방 입장
-            chat_Server.Room.Enter(this);
+            chat_Server.Room.Push(() => { chat_Server.Room.Enter(this); });
+            
 
         }
 
@@ -28,7 +29,9 @@ namespace server
             SessionManager.Instance.Remove(this);
             if (Room == null)
             {
-                Room.Leave(this);
+                // null 크래시 방지
+                Room room = Room;
+                room.Push(() => { room.Leave(this); });
                 Room = null;
             }
 

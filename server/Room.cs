@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualBasic;
+using ServerCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,26 +8,21 @@ using System.Threading.Tasks;
 
 namespace server
 {
-    internal class Room
+    internal class Room : IJobQueue
     {
+        // room에서 lock처리를 하기때문에 lock 제거
         List<ClientSession> _sessions = new List<ClientSession>();
-        object _lock = new object();
-
+        JobQueue _jobQueue = new JobQueue();
         public void Enter(ClientSession session)
         {
-            lock (_lock)
-            {
-                _sessions.Add(session);
-                session.Room = this;
-            }
+            _sessions.Add(session);
+            session.Room = this;
+            
         }
 
         public void Leave(ClientSession session)
         {
-            lock (_lock)
-            {
-                _sessions.Remove(session);
-            }
+            _sessions.Remove(session);
         }
 
         public void Broadcast(ClientSession session,C_PlayerChat packet)
@@ -38,11 +34,14 @@ namespace server
             p.playerName = packet.playerName;
             p.contents = packet.contents;
             ArraySegment<byte> segment = p.Write();
-            lock (_lock)
-            {
-                foreach (ClientSession s in _sessions)
-                    s.Send(segment);
-            }
+            foreach (ClientSession s in _sessions)
+                s.Send(segment);
+            
+        }
+
+        public void Push(Action job)
+        {
+            _jobQueue.Push(job);
         }
     }
 }

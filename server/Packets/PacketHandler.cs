@@ -16,7 +16,13 @@ class PacketHandler
 
         if (clientSession.Room == null)
             return;
-        clientSession.Room.Broadcast(clientSession, p);
+
+        // null 크래시 방지
+        Room room = clientSession.Room;
+        room.Push(
+            () => { room.Broadcast(clientSession, p); }
+            );
+        
     }
 
 }

@@ -18,7 +18,7 @@ namespace server
         Func<Session> _sessionFactory; // 클라이언트와 연결할 세션을 만들 함수
 
         // 리스너 초기화
-        public void Init(IPEndPoint endPoint, Func<Session> sessionFactory, int register = 10)
+        public void Init(IPEndPoint endPoint, Func<Session> sessionFactory, int register = 10, int backlog = 10)
         {
             // 리슨 소켓 생성
             _listenSocket = new Socket(endPoint.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
@@ -29,7 +29,7 @@ namespace server
             _listenSocket.Bind(endPoint);
 
             // 최대 대기수 설정
-            _listenSocket.Listen(5);
+            _listenSocket.Listen(backlog);
 
             // 많은 접속이 예상될 경우 args를 여러개 생성하여 작업을 진행할 수도 있다.
             //for (int i = 0; i < register; i++)
