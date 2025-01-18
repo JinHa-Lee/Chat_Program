@@ -19,6 +19,7 @@ namespace ServerCore
             // 알맞게 받고 분석하기 위한 기능
 
             int processLen = 0;
+            int packetCount = 0;
 
             while (true)
             {
@@ -34,11 +35,15 @@ namespace ServerCore
                 // 여기까지 왔으면 패킷 조립가능
                 // 패킷의 유효범위만큼 기능 실행 
                 OnRecvPacket(new ArraySegment<byte>(buffer.Array, buffer.Offset, dataSize));
+                packetCount++;
 
                 processLen += dataSize;
                 // 다음 패킷 위치로 버퍼 이동
                 buffer = new ArraySegment<byte>(buffer.Array, buffer.Offset + dataSize, buffer.Count - dataSize);
             }
+
+            if (packetCount > 1)
+                Console.WriteLine($"패킷 모아보내기 {packetCount}");
 
             return processLen;
         }
@@ -119,7 +124,23 @@ namespace ServerCore
             }
         }
 
-#region 네트워크 통신
+        public void Send(List<ArraySegment<byte>> bufferList)
+        {
+            if (bufferList.Count == 0)
+                return;
+
+            lock (_lock)
+            {
+                foreach (ArraySegment<byte> buffer in bufferList)
+                    _sendQueue.Enqueue(buffer);
+                if (_pendingList.Count == 0)
+                    RegisterSend();
+            }
+        }
+
+
+
+        #region 네트워크 통신
         void RegisterSend()
         {
             // send를 비동기로 등록하고 대기
