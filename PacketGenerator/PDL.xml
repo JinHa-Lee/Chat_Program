@@ -13,4 +13,6 @@
 		<string name ="playerName"/>
 		<string name ="contents"/>
 	</packet>
+	<packet name="C_Disconnect">
+	</packet>
 </PDL>

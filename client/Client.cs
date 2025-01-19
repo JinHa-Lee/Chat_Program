@@ -3,7 +3,6 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using client;
-using MyClient;
 using server;
 using ServerCore;
 
@@ -11,36 +10,6 @@ namespace Client
 {
     class chat_Client
     {
-
-        static void cliect_chat_action(Socket serverSocket)
-        {
-            try
-            {
-
-                // 연결 성공 후 진행
-                Console.WriteLine($"Connected Server, {serverSocket.RemoteEndPoint.ToString()}");
-
-                // 서버에게 송신
-                byte[] sendBuffer = Encoding.UTF8.GetBytes("Hello Server!");
-                int sendBytes = serverSocket.Send(sendBuffer);
-
-                // 서버 정보 수신
-                byte[] recvBuffer = new byte[1024];
-                int recvByte = serverSocket.Receive(recvBuffer);
-                string recvData = Encoding.UTF8.GetString(recvBuffer, 0, recvByte);
-                Console.WriteLine($"서버 수신 메시지: {recvData}");
-
-                // 클라이언트 연결 해제
-                serverSocket.Shutdown(SocketShutdown.Both); // 연결 해제 예고
-                serverSocket.Close(); // 연결 해제
-
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-        }
-
 
         static void Main(string[] args)
         {
@@ -53,12 +22,15 @@ namespace Client
 
             Connector connector = new Connector();
             connector.Connect(endPoint, () => { return SessionManager.Instance.Generate(); });
+            Console.WriteLine("PlayerName를 입력해주세요.");
+            string input = Console.ReadLine();
+            SessionManager.Instance.SetPlayerName(input);
 
             while (true) 
             {
-                //Console.WriteLine("contents를 입력해주세요.");
+                //Console.WriteLine("메시지를 입력해주세요.");
                 //string msg = Console.ReadLine();
-
+                int count = 0;
                 try
                 {
                     SessionManager.Instance.SendForEach();
@@ -68,6 +40,11 @@ namespace Client
                     Console.WriteLine(ex.ToString());
                 }
 
+                if (count > 5)
+                {
+                    SessionManager.Instance.Disconnect();
+                }
+                count++;
                 Thread.Sleep(500);
             } // 메인 프로그램이 종료되지 않도록 유지
 
