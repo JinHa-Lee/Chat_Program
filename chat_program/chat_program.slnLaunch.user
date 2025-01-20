@@ -7,7 +7,7 @@
         "Action": "Start"
       },
       {
-        "Path": "..\\client\\client.csproj",
+        "Path": "..\\WinFormsClient\\WinFormsClient.csproj",
         "Action": "Start"
       }
     ]

@@ -22,6 +22,8 @@ public class PacketManager
     {
             _onRecv.Add((ushort)PacketID.S_BroadcastChat, MakePacket<S_BroadcastChat>);
             _handler.Add((ushort)PacketID.S_BroadcastChat, PacketHandler.S_BroadcastChatHandler);
+            _onRecv.Add((ushort)PacketID.S_BroadcastDisconnect, MakePacket<S_BroadcastDisconnect>);
+            _handler.Add((ushort)PacketID.S_BroadcastDisconnect, PacketHandler.S_BroadcastDisconnectHandler);
 
     }
 

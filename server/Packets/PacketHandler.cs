@@ -17,12 +17,30 @@ class PacketHandler
         if (clientSession.Room == null)
             return;
 
+        Console.WriteLine($"{p.playerName} : {p.contents}");
+
         // null 크래시 방지
         Room room = clientSession.Room;
         room.Push(
             () => { room.Broadcast(clientSession, p); }
             );
         
+    }
+
+    public static void C_DisconnectHandler(PacketSession session, IPacket packet)
+    {
+        ClientSession clientSession = session as ClientSession;
+        C_Disconnect p = packet as C_Disconnect;
+
+        if (clientSession.Room == null)
+            return;
+
+        // null 크래시 방지
+        Room room = clientSession.Room;
+        room.Push(
+            () => { room.Leave(clientSession); }
+            );
+
     }
 
 }

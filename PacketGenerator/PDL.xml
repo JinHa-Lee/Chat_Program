@@ -4,15 +4,16 @@
 <!-- C_~~ 패킷은 client > server 패킷-->
 <PDL>
 	<packet name="C_PlayerChat">
-		<long name ="playerId"/>
 		<string name ="playerName"/>
 		<string name ="contents"/>
 	</packet>
 	<packet name="S_BroadcastChat">
-		<long name ="playerId"/>
 		<string name ="playerName"/>
 		<string name ="contents"/>
 	</packet>
 	<packet name="C_Disconnect">
+	</packet>
+	<packet name="S_BroadcastDisconnect">
+		<int name ="playerId"/>
 	</packet>
 </PDL>

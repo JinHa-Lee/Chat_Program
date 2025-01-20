@@ -17,7 +17,13 @@ class PacketHandler
         Console.WriteLine($"{p.playerName} : {p.contents}");
     }
 
+    public static void S_BroadcastDisconnectHandler(PacketSession session, IPacket packet)
+    {
+        S_BroadcastDisconnect p = packet as S_BroadcastDisconnect;
+        ServerSession _session = session as ServerSession;
 
+        Console.WriteLine($"{p.playerId} disconnected");
+    }
 
 }
 

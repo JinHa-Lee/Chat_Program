@@ -32,7 +32,6 @@ namespace server
             // 클라이언트에서 받은 채팅을 룸에있는 다른 세션들에게 전송
 
             S_BroadcastChat p = new S_BroadcastChat();
-            p.playerId = packet.playerId;
             p.playerName = packet.playerName;
             p.contents = packet.contents;
             ArraySegment<byte> segment = p.Write();
