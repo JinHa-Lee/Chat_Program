@@ -17,6 +17,7 @@ namespace WinFormsClient
         static string connectStatus = "Disconnect";
         string _message = string.Empty;
         ServerSession _session = new ServerSession();
+        Thread t_handler;
         public string recvuserName = string.Empty;
         public string recvmessage = string.Empty;
 
@@ -83,7 +84,7 @@ namespace WinFormsClient
             DisplayText("서버에 연결되었습니다.");
             txtStatus.Text = connectStatus;
 
-            Thread t_handler = new Thread(GetMessage);
+            t_handler = new Thread(GetMessage);
             t_handler.IsBackground = true;
             t_handler.Start();
 
@@ -95,11 +96,7 @@ namespace WinFormsClient
             {
                 if (connectStatus.Equals("Connect"))
                 {
-                    clientSocket = new TcpClient();
-                    byte[] buffer = Encoding.Unicode.GetBytes("LeaveChat" + "$");
-                    stream.Write(buffer, 0, buffer.Length);
-                    stream.Flush();
-                    connectStatus = "Disconnect";
+                    Disconnect();
                 }
                 else
                 {
@@ -115,20 +112,31 @@ namespace WinFormsClient
             txtStatus.Text = connectStatus;
         }
 
+        private void Disconnect()
+        {
+            clientSocket = new TcpClient();
+            C_Disconnect p = new C_Disconnect();
+            stream.Write(p.Write());
+            stream.Flush();
+            connectStatus = "Disconnect";
+            
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Disconnect();
+            Application.ExitThread();
+            Environment.Exit(0);
+        }
+
         private void buttonSend_Click(object sender, EventArgs e)
         {
-            //txtMessage.Focus();
-            //byte[] buffer = Encoding.Unicode.GetBytes(txtMessage.Text + "$");
-            //stream.Write(buffer, 0, buffer.Length);
-            //stream.Flush();
 
-            C_PlayerChat p = new C_PlayerChat() { playerName = txtUsername.Text, contents = "채팅 내용 입니다." };
+            C_PlayerChat p = new C_PlayerChat() { playerName = txtUsername.Text, contents = txtMessage.Text };
             ArraySegment<byte> buffer = p.Write();
-            
+
             stream.Write(p.Write());
             txtMessage.Text = "";
-
-
         }
 
         private void textBox7_TextChanged(object sender, EventArgs e)
@@ -192,7 +200,7 @@ namespace WinFormsClient
 
         private void GetMessage()
         {
-            while (true)
+            while (connectStatus.Equals("Connect"))
             {
                 stream = clientSocket.GetStream();
                 int bufferSize = clientSocket.ReceiveBufferSize;
@@ -205,6 +213,11 @@ namespace WinFormsClient
             }
         }
 
+        private void txtMessage_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                buttonSend_Click(sender, e);
+        }
     }
 
 }

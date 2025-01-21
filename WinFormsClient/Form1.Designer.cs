@@ -67,6 +67,7 @@
             txtMessage.Size = new Size(605, 27);
             txtMessage.TabIndex = 5;
             txtMessage.TextChanged += txtMessage_TextChanged;
+            txtMessage.KeyDown += txtMessage_KeyDown;
             // 
             // buttonConnect
             // 

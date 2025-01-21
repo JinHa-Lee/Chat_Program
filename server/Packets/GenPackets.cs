@@ -148,7 +148,7 @@ class C_Disconnect : IPacket
 class S_BroadcastDisconnect : IPacket
 {
 
-    public int playerId;
+    public string playerName;
 
     public ushort PacketId { get { return (ushort)PacketID.S_BroadcastDisconnect; } }
 
@@ -158,8 +158,10 @@ class S_BroadcastDisconnect : IPacket
         ushort count = 0;
         count += sizeof(ushort); // size 크기
         count += sizeof(ushort); // packetId 크기
-        this.playerId = BitConverter.ToInt32(s.Slice(count, s.Length - count));
-		count += sizeof(int);
+        ushort playerNameLen = BitConverter.ToUInt16(s.Slice(count, s.Length - count));
+		count += sizeof(ushort);
+		this.playerName = Encoding.Unicode.GetString(s.Slice(count, playerNameLen));
+		count += playerNameLen;
     }
 
     public ArraySegment<byte> Write()
@@ -171,8 +173,10 @@ class S_BroadcastDisconnect : IPacket
         count += sizeof(ushort);
         success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), (ushort)PacketID.S_BroadcastDisconnect);
         count += sizeof(ushort);
-        success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), this.playerId);
-		count += sizeof(int);
+        ushort playerNameLen = (ushort)Encoding.Unicode.GetBytes(this.playerName, 0, playerName.Length, segment.Array, segment.Offset + count + sizeof(ushort));
+		success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), playerNameLen);
+		count += sizeof(ushort);
+		count += playerNameLen;
         success &= BitConverter.TryWriteBytes(s, count);
         if (success == false)
             return null;

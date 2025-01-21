@@ -25,6 +25,7 @@ namespace server
         public void Leave(ClientSession session)
         {
             _sessions.Remove(session);
+            session.Disconnect();
         }
 
         public void Broadcast(ClientSession session, C_PlayerChat packet)

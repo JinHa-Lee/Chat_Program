@@ -14,6 +14,6 @@
 	<packet name="C_Disconnect">
 	</packet>
 	<packet name="S_BroadcastDisconnect">
-		<int name ="playerId"/>
+		<string name ="playerName"/>
 	</packet>
 </PDL>
