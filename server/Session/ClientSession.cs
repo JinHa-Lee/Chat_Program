@@ -13,6 +13,7 @@ namespace server
     {
         public Room Room { get; set; }
         public int sessionId { get; set; }
+        public string playerName { get; set; }
 
         public override void OnConnected(EndPoint endPoint)
         {
@@ -26,6 +27,7 @@ namespace server
 
         public override void OnDisconnected(EndPoint endPoint)
         {
+            Console.WriteLine($"OnDisconnected : {endPoint}");
             SessionManager.Instance.Remove(this);
             if (Room == null)
             {
@@ -35,7 +37,6 @@ namespace server
                 Room = null;
             }
 
-            Console.WriteLine($"OnDisconnected : {endPoint}");
         }
 
         public override void OnRecvPacket(ArraySegment<byte> buffer)

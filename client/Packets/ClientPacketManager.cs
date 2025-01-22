@@ -20,6 +20,10 @@ public class PacketManager
 
     public void Register()
     {
+            _onRecv.Add((ushort)PacketID.S_BroadcastEnterRoom, MakePacket<S_BroadcastEnterRoom>);
+            _handler.Add((ushort)PacketID.S_BroadcastEnterRoom, PacketHandler.S_BroadcastEnterRoomHandler);
+            _onRecv.Add((ushort)PacketID.S_PlayerList, MakePacket<S_PlayerList>);
+            _handler.Add((ushort)PacketID.S_PlayerList, PacketHandler.S_PlayerListHandler);
             _onRecv.Add((ushort)PacketID.S_BroadcastChat, MakePacket<S_BroadcastChat>);
             _handler.Add((ushort)PacketID.S_BroadcastChat, PacketHandler.S_BroadcastChatHandler);
             _onRecv.Add((ushort)PacketID.S_BroadcastDisconnect, MakePacket<S_BroadcastDisconnect>);

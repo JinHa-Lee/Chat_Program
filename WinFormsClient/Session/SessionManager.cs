@@ -35,7 +35,7 @@ namespace server
             {
                 foreach (ServerSession session in _sessions)
                 {
-                    C_PlayerChat p = new C_PlayerChat() { playerName = _playerName, contents = "채팅 내용 입니다." };
+                    C_PlayerChat p = new C_PlayerChat() { contents = "채팅 내용 입니다." };
 
                     session.Send(p.Write());
                 }

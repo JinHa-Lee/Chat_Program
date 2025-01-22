@@ -5,6 +5,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using ServerCore;
+using WinFormsClient;
 
 namespace client
 {
@@ -22,7 +23,7 @@ namespace client
 
         public override void OnRecvPacket(ArraySegment<byte> buffer)
         {
-            PacketManager.Instance.OnRecvPacket(this, buffer);
+            PacketManager.Instance.OnRecvPacket(this, buffer, new Form1());
         }
 
         public override void OnSend(int numOfBytes)

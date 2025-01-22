@@ -51,11 +51,6 @@ namespace WinFormsClient
         {
             try
             {
-                if (String.IsNullOrEmpty(userName))
-                {
-                    MessageBox.Show("사용자를 등록해주십시오.");
-                    return;
-                }
                 if (connectStatus.Equals("Disconnect"))
                 {
                     //DNS (Domain Name System) 사용
@@ -132,7 +127,7 @@ namespace WinFormsClient
         private void buttonSend_Click(object sender, EventArgs e)
         {
 
-            C_PlayerChat p = new C_PlayerChat() { playerName = txtUsername.Text, contents = txtMessage.Text };
+            C_PlayerChat p = new C_PlayerChat() { contents = txtMessage.Text };
             ArraySegment<byte> buffer = p.Write();
 
             stream.Write(p.Write());
@@ -168,7 +163,7 @@ namespace WinFormsClient
         {
 
         }
-        private void DisplayText(string text)
+        public void DisplayText(string text)
         {
             // 데이터를 수신창에 표시, invoke를 사용하여 충돌피하기
             richTextBox1.Invoke((MethodInvoker)delegate { richTextBox1.AppendText(text + "\r\n"); });
@@ -184,8 +179,19 @@ namespace WinFormsClient
 
         private void Login_Click(object sender, EventArgs e)
         {
-            userName = txtUsername.Text;
-            txtUsername.Enabled = false;
+            if (connectStatus.Equals("Connect"))
+            {
+                userName = txtUsername.Text;
+                txtUsername.Enabled = false;
+                C_PlayerName p = new C_PlayerName() { playerName = userName };
+                ArraySegment<byte> buffer = p.Write();
+                stream.Write(p.Write());
+            }
+            else
+            {
+                MessageBox.Show("서버와 연결해주십시오.");
+                return;
+            }
         }
 
         private void Logout_Click(object sender, EventArgs e)
@@ -206,9 +212,10 @@ namespace WinFormsClient
                 int bufferSize = clientSocket.ReceiveBufferSize;
                 byte[] buffer = new byte[bufferSize];
                 int bytes = stream.Read(buffer, 0, bufferSize);
-                S_BroadcastChat s = new S_BroadcastChat();
-                s.Read(buffer);
-                DisplayText($"<{s.playerName}>{s.contents}");
+                PacketManager.Instance.OnRecvPacket(_session, buffer, this);
+                //S_BroadcastChat s = new S_BroadcastChat();
+                //s.Read(buffer);
+                //DisplayText($"<{s.playerName}>{s.contents}");
 
             }
         }
@@ -217,6 +224,15 @@ namespace WinFormsClient
         {
             if (e.KeyCode == Keys.Enter)
                 buttonSend_Click(sender, e);
+        }
+
+        public void Add_User(string text)
+        {
+            text += "\n";
+            if (userList.InvokeRequired)
+                userList.Invoke(new MethodInvoker(delegate { userList.Text += text;  }));
+            else
+                userList.Text += text ;
         }
     }
 

@@ -3,17 +3,30 @@
 <!-- S_~~ 패킷은 server > client 패킷-->
 <!-- C_~~ 패킷은 client > server 패킷-->
 <PDL>
-	<packet name="C_PlayerChat">
+	<packet name="C_PlayerName">
 		<string name ="playerName"/>
+	</packet>
+	<packet name="S_BroadcastEnterRoom">
+		<int name ="playerId"/>
+		<string name ="playerName"/>
+	</packet>
+	<packet name="S_PlayerList">
+		<list name="player">
+			<string name ="playerName"/>
+		</list>
+	</packet>
+	<packet name="C_PlayerChat">
 		<string name ="contents"/>
 	</packet>
 	<packet name="S_BroadcastChat">
+		<int name ="playerId"/>
 		<string name ="playerName"/>
 		<string name ="contents"/>
 	</packet>
 	<packet name="C_Disconnect">
 	</packet>
 	<packet name="S_BroadcastDisconnect">
+		<int name ="playerId"/>
 		<string name ="playerName"/>
 	</packet>
 </PDL>

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox3 = new TextBox();
+            userList = new TextBox();
             txtStatus = new TextBox();
             txtMessage = new TextBox();
             buttonConnect = new Button();
@@ -43,14 +43,14 @@
             Logout = new Button();
             SuspendLayout();
             // 
-            // textBox3
+            // userList
             // 
-            textBox3.Location = new Point(623, 103);
-            textBox3.Multiline = true;
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(158, 282);
-            textBox3.TabIndex = 2;
-            textBox3.TextChanged += textBox3_TextChanged;
+            userList.Location = new Point(623, 103);
+            userList.Multiline = true;
+            userList.Name = "userList";
+            userList.Size = new Size(158, 282);
+            userList.TabIndex = 2;
+            userList.TextChanged += textBox3_TextChanged;
             // 
             // txtStatus
             // 
@@ -181,7 +181,7 @@
             Controls.Add(buttonConnect);
             Controls.Add(txtMessage);
             Controls.Add(txtStatus);
-            Controls.Add(textBox3);
+            Controls.Add(userList);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -190,7 +190,7 @@
         }
 
         #endregion
-        private TextBox textBox3;
+        private TextBox userList;
         private TextBox txtStatus;
         private TextBox txtMessage;
         private Button buttonConnect;
