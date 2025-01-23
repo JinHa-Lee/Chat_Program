@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\GitHub\\Chat_Program\\chat_program\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\packets\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\packets\\clientpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\session\\serversession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\packets\\genpackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -21,28 +21,13 @@
       "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\packets\\genpackets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\packets\\clientpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{676F68F3-C100-4600-B34A-2D74FA954ECF}|..\\PacketGenerator\\PacketGenerator.csproj|c:\\github\\chat_program\\packetgenerator\\pdl.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\session\\serversession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E49D7341-B15C-4FDF-B297-097F13633F26}|..\\ServerCore\\ServerCore.csproj|c:\\github\\chat_program\\servercore\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\session\\serversession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\session\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\packets\\serverpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -51,10 +36,34 @@
       "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\packets\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\session\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\session\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E49D7341-B15C-4FDF-B297-097F13633F26}|..\\ServerCore\\ServerCore.csproj|c:\\github\\chat_program\\servercore\\session.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\packets\\clientpacketmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\session\\serversession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\session\\clientsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9A725C87-7225-4E8D-8AA1-F7DE68B31F5D}|..\\client\\client.csproj|c:\\github\\chat_program\\client\\packets\\packethandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\connector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A3B7ED0-0D41-4C7D-89C9-6D9D21998F69}|..\\WinFormsClient\\WinFormsClient.csproj|c:\\github\\chat_program\\winformsclient\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{95DE20D0-7E04-43D8-9CFE-65295217E69E}|..\\server\\server.csproj|c:\\github\\chat_program\\server\\session\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -70,7 +79,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 230,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,80 +87,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GenPackets.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\GenPackets.cs",
-              "RelativeDocumentMoniker": "..\\WinFormsClient\\Packets\\GenPackets.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\GenPackets.cs",
-              "RelativeToolTip": "..\\WinFormsClient\\Packets\\GenPackets.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAA7wGkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:34:51.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ClientPacketManager.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\ClientPacketManager.cs",
-              "RelativeDocumentMoniker": "..\\WinFormsClient\\Packets\\ClientPacketManager.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\ClientPacketManager.cs",
-              "RelativeToolTip": "..\\WinFormsClient\\Packets\\ClientPacketManager.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAYwCIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:31:35.796Z",
+              "Title": "PDL.xml",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PDL.xml",
+              "RelativeDocumentMoniker": "..\\PacketGenerator\\PDL.xml",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\PacketGenerator\\PDL.xml",
+              "RelativeToolTip": "..\\PacketGenerator\\PDL.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-01-23T09:18:19.15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.Designer.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Form1.Designer.cs",
-              "RelativeDocumentMoniker": "..\\WinFormsClient\\Form1.Designer.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Form1.Designer.cs",
-              "RelativeToolTip": "..\\WinFormsClient\\Form1.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Room.cs",
+              "RelativeDocumentMoniker": "..\\server\\Room.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Room.cs",
+              "RelativeToolTip": "..\\server\\Room.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwEcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:17:17.131Z",
+              "WhenOpened": "2025-01-21T07:46:12.404Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Form1.cs",
               "RelativeDocumentMoniker": "..\\WinFormsClient\\Form1.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Form1.cs",
               "RelativeToolTip": "..\\WinFormsClient\\Form1.cs",
-              "ViewState": "AgIAANoAAAAAAAAAAADwv+oAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAANkAAAAAAAAAAAAUwNYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T08:43:47.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PacketHandler.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\PacketHandler.cs",
-              "RelativeDocumentMoniker": "..\\WinFormsClient\\Packets\\PacketHandler.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\PacketHandler.cs",
-              "RelativeToolTip": "..\\WinFormsClient\\Packets\\PacketHandler.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBkAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ClientPacketManager.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\ClientPacketManager.cs",
+              "RelativeDocumentMoniker": "..\\WinFormsClient\\Packets\\ClientPacketManager.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\ClientPacketManager.cs",
+              "RelativeToolTip": "..\\WinFormsClient\\Packets\\ClientPacketManager.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAYwCUAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T08:52:58.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Room.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Room.cs",
-              "RelativeDocumentMoniker": "..\\server\\Room.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Room.cs",
-              "RelativeToolTip": "..\\server\\Room.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAiwEAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T07:46:12.404Z",
+              "WhenOpened": "2025-01-23T08:49:44.875Z",
               "EditorCaption": ""
             },
             {
@@ -162,52 +145,130 @@
               "RelativeDocumentMoniker": "..\\server\\Packets\\GenPackets.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Packets\\GenPackets.cs",
               "RelativeToolTip": "..\\server\\Packets\\GenPackets.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAADwv2kAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAG0AAAAAAAAAAADwv30AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T10:00:29.932Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Form1.cs",
-              "RelativeDocumentMoniker": "..\\WinFormsClient\\Form1.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Form1.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "..\\WinFormsClient\\Form1.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:16:44.48Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "ServerSession.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Session\\ServerSession.cs",
               "RelativeDocumentMoniker": "..\\WinFormsClient\\Session\\ServerSession.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Session\\ServerSession.cs",
               "RelativeToolTip": "..\\WinFormsClient\\Session\\ServerSession.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBkAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T10:11:35.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Connector.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Connector.cs",
-              "RelativeDocumentMoniker": "..\\WinFormsClient\\Connector.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Connector.cs",
-              "RelativeToolTip": "..\\WinFormsClient\\Connector.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PacketHandler.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\PacketHandler.cs",
+              "RelativeDocumentMoniker": "..\\WinFormsClient\\Packets\\PacketHandler.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\PacketHandler.cs",
+              "RelativeToolTip": "..\\WinFormsClient\\Packets\\PacketHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T07:43:19.338Z",
+              "WhenOpened": "2025-01-23T08:48:16.435Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GenPackets.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\GenPackets.cs",
+              "RelativeDocumentMoniker": "..\\WinFormsClient\\Packets\\GenPackets.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Packets\\GenPackets.cs",
+              "RelativeToolTip": "..\\WinFormsClient\\Packets\\GenPackets.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAuwHkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T09:19:53.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ServerPacketManager.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Packets\\ServerPacketManager.cs",
+              "RelativeDocumentMoniker": "..\\server\\Packets\\ServerPacketManager.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Packets\\ServerPacketManager.cs",
+              "RelativeToolTip": "..\\server\\Packets\\ServerPacketManager.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAgwB8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T08:19:54.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\WinFormsClient\\Form1.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Form1.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "..\\WinFormsClient\\Form1.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T09:10:53.975Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "PacketHandler.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Packets\\PacketHandler.cs",
+              "RelativeDocumentMoniker": "..\\server\\Packets\\PacketHandler.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Packets\\PacketHandler.cs",
+              "RelativeToolTip": "..\\server\\Packets\\PacketHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBgAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T08:02:38.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Server.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Server.cs",
+              "RelativeDocumentMoniker": "..\\server\\Server.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Server.cs",
+              "RelativeToolTip": "..\\server\\Server.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAvwA8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T08:30:03.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Session\\SessionManager.cs",
+              "RelativeDocumentMoniker": "..\\client\\Session\\SessionManager.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Session\\SessionManager.cs",
+              "RelativeToolTip": "..\\client\\Session\\SessionManager.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAcwCkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T08:54:16.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ServerSession.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Session\\ServerSession.cs",
+              "RelativeDocumentMoniker": "..\\client\\Session\\ServerSession.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Session\\ServerSession.cs",
+              "RelativeToolTip": "..\\client\\Session\\ServerSession.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T09:17:09.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Session.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\ServerCore\\Session.cs",
               "RelativeDocumentMoniker": "..\\ServerCore\\Session.cs",
@@ -220,67 +281,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Program.cs",
-              "RelativeDocumentMoniker": "..\\WinFormsClient\\Program.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Program.cs",
-              "RelativeToolTip": "..\\WinFormsClient\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "ClientPacketManager.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Packets\\ClientPacketManager.cs",
+              "RelativeDocumentMoniker": "..\\client\\Packets\\ClientPacketManager.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Packets\\ClientPacketManager.cs",
+              "RelativeToolTip": "..\\client\\Packets\\ClientPacketManager.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwCEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:46:58.81Z",
+              "WhenOpened": "2025-01-23T07:49:32.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ServerSession.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Session\\ServerSession.cs",
-              "RelativeDocumentMoniker": "..\\client\\Session\\ServerSession.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Session\\ServerSession.cs",
-              "RelativeToolTip": "..\\client\\Session\\ServerSession.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:17:09.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ClientSession.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Session\\ClientSession.cs",
               "RelativeDocumentMoniker": "..\\server\\Session\\ClientSession.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Session\\ClientSession.cs",
               "RelativeToolTip": "..\\server\\Session\\ClientSession.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAmwCsAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAmwCsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T08:03:06.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ServerPacketManager.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Packets\\ServerPacketManager.cs",
-              "RelativeDocumentMoniker": "..\\server\\Packets\\ServerPacketManager.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Packets\\ServerPacketManager.cs",
-              "RelativeToolTip": "..\\server\\Packets\\ServerPacketManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T08:19:54.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "PacketHandler.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Packets\\PacketHandler.cs",
-              "RelativeDocumentMoniker": "..\\server\\Packets\\PacketHandler.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\server\\Packets\\PacketHandler.cs",
-              "RelativeToolTip": "..\\server\\Packets\\PacketHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T08:02:38.017Z",
               "EditorCaption": ""
             },
             {
@@ -291,27 +313,51 @@
               "RelativeDocumentMoniker": "..\\client\\Packets\\PacketHandler.cs",
               "ToolTip": "C:\\GitHub\\Chat_Program\\client\\Packets\\PacketHandler.cs",
               "RelativeToolTip": "..\\client\\Packets\\PacketHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T08:52:09.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SessionManager.cs",
-              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Session\\SessionManager.cs",
-              "RelativeDocumentMoniker": "..\\WinFormsClient\\Session\\SessionManager.cs",
-              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Session\\SessionManager.cs",
-              "RelativeToolTip": "..\\WinFormsClient\\Session\\SessionManager.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAIwCUAAAA6AAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "..\\WinFormsClient\\Form1.Designer.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Form1.Designer.cs",
+              "RelativeToolTip": "..\\WinFormsClient\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T09:00:54.483Z",
+              "WhenOpened": "2025-01-22T09:17:17.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
+              "Title": "Connector.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Connector.cs",
+              "RelativeDocumentMoniker": "..\\WinFormsClient\\Connector.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Connector.cs",
+              "RelativeToolTip": "..\\WinFormsClient\\Connector.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T07:43:19.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Program.cs",
+              "RelativeDocumentMoniker": "..\\WinFormsClient\\Program.cs",
+              "ToolTip": "C:\\GitHub\\Chat_Program\\WinFormsClient\\Program.cs",
+              "RelativeToolTip": "..\\WinFormsClient\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T09:46:58.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "SessionManager.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\server\\Session\\SessionManager.cs",
               "RelativeDocumentMoniker": "..\\server\\Session\\SessionManager.cs",
@@ -319,12 +365,11 @@
               "RelativeToolTip": "..\\server\\Session\\SessionManager.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T08:03:36.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T08:03:36.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\GitHub\\Chat_Program\\client\\Client.cs",
               "RelativeDocumentMoniker": "..\\client\\Client.cs",
@@ -332,8 +377,7 @@
               "RelativeToolTip": "..\\client\\Client.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-22T08:36:41.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T08:36:41.803Z"
             }
           ]
         }

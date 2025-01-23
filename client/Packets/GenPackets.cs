@@ -108,11 +108,14 @@ class S_PlayerList : IPacket
 
     public class Player
 	{
-	    public string playerName;
+	    public bool isSelf;
+		public string playerName;
 	
 	    public void Read(ReadOnlySpan<byte> s, ref ushort count)
 	    {
-	        ushort playerNameLen = BitConverter.ToUInt16(s.Slice(count, s.Length - count));
+	        this.isSelf = BitConverter.ToBoolean(s.Slice(count, s.Length - count));
+			count += sizeof(bool);
+			ushort playerNameLen = BitConverter.ToUInt16(s.Slice(count, s.Length - count));
 			count += sizeof(ushort);
 			this.playerName = Encoding.Unicode.GetString(s.Slice(count, playerNameLen));
 			count += playerNameLen;
@@ -121,7 +124,9 @@ class S_PlayerList : IPacket
 	    public bool Write(Span<byte> s, ref ushort count)
 	    {
 	        bool success = true;
-	        ushort playerNameLen = (ushort)Encoding.Unicode.GetBytes(this.playerName, 0, playerName.Length, segment.Array, segment.Offset + count + sizeof(ushort));
+	        success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), this.isSelf);
+			count += sizeof(bool);
+			ushort playerNameLen = (ushort)Encoding.Unicode.GetBytes(this.playerName, 0, playerName.Length, segment.Array, segment.Offset + count + sizeof(ushort));
 			success &= BitConverter.TryWriteBytes(s.Slice(count, s.Length - count), playerNameLen);
 			count += sizeof(ushort);
 			count += playerNameLen;

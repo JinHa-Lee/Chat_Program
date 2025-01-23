@@ -39,7 +39,7 @@ class PacketHandler
         // null 크래시 방지
         Room room = clientSession.Room;
         room.Push(
-            () => { room.Broadcast(clientSession, p); }
+            () => { room.Chat(clientSession, p); }
             );
         
     }

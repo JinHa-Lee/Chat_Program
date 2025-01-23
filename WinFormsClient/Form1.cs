@@ -213,9 +213,6 @@ namespace WinFormsClient
                 byte[] buffer = new byte[bufferSize];
                 int bytes = stream.Read(buffer, 0, bufferSize);
                 PacketManager.Instance.OnRecvPacket(_session, buffer, this);
-                //S_BroadcastChat s = new S_BroadcastChat();
-                //s.Read(buffer);
-                //DisplayText($"<{s.playerName}>{s.contents}");
 
             }
         }
@@ -228,11 +225,20 @@ namespace WinFormsClient
 
         public void Add_User(string text)
         {
-            text += "\n";
+            text += "\r\n";
             if (userList.InvokeRequired)
                 userList.Invoke(new MethodInvoker(delegate { userList.Text += text;  }));
             else
                 userList.Text += text ;
+        }
+        public void read_UserList(string text)
+        {
+            text += "\r\n";
+            if (userList.InvokeRequired)
+                userList.Invoke(new MethodInvoker(delegate { userList.Text += text; }));
+            else
+                userList.Text += text;
+
         }
     }
 

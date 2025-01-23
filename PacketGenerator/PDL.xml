@@ -12,6 +12,7 @@
 	</packet>
 	<packet name="S_PlayerList">
 		<list name="player">
+			<bool name="isSelf"/>
 			<string name ="playerName"/>
 		</list>
 	</packet>

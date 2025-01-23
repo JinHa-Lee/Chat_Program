@@ -10,7 +10,7 @@ namespace server
 {
     internal class Room : IJobQueue
     {
-        // room에서 lock처리를 하기때문에 lock 제거
+        // Queue에서 lock처리를 하기때문에 lock 제거
         List<ClientSession> _sessions = new List<ClientSession>();
         JobQueue _jobQueue = new JobQueue();
         List<ArraySegment<byte>> _pendingList = new List<ArraySegment<byte>>();
@@ -31,7 +31,7 @@ namespace server
         {
             _pendingList.Add(segment);
         }
-        public void Broadcast(ClientSession session, C_PlayerChat packet)
+        public void Chat(ClientSession session, C_PlayerChat packet)
         {
             // 클라이언트에서 받은 채팅을 룸에있는 다른 세션들에게 전송
 
@@ -39,10 +39,7 @@ namespace server
             p.playerId = session.sessionId;
             p.playerName = session.playerName;
             p.contents = packet.contents;
-            ArraySegment<byte> segment = p.Write();
-
-            // 패킷을 매번보내지 않고 모아서 보낸다
-            _pendingList.Add(segment);
+            Broadcast(p.Write());
 
         }
 
@@ -61,16 +58,24 @@ namespace server
 
         public void SetName(ClientSession session, C_PlayerName packet)
         {
+
+            // 새로운 플레이어에게 기존 플레이어 정보 전송
             session.playerName = packet.playerName;
             S_PlayerList players = new S_PlayerList();
             foreach (ClientSession s in _sessions)
             {
                 players.players.Add(new S_PlayerList.Player()
                 {
+                    isSelf = (s == session),
                     playerName = s.playerName,
                 });
             }
             session.Send(players.Write());
+            // 새로운 플레이어의 접속을 기존 플레이어에게 전송
+            S_BroadcastEnterRoom pBroadcast = new S_BroadcastEnterRoom();
+            pBroadcast.playerId = session.sessionId;
+            pBroadcast.playerName = packet.playerName;
+            Broadcast(pBroadcast.Write());
         }
     }
 }
