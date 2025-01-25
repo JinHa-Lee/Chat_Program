@@ -43,7 +43,8 @@ class PacketHandler
         S_BroadcastDisconnect p = packet as S_BroadcastDisconnect;
         ServerSession _session = session as ServerSession;
 
-        Console.WriteLine($"{p.playerId} disconnected");
+        form.DisplayText($"{p.playerName}님이 퇴장하셨습니다.");
+        form.Remove_User(p.playerName);
     }
 
 

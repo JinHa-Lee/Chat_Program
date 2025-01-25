@@ -25,6 +25,12 @@ namespace server
         public void Leave(ClientSession session)
         {
             _sessions.Remove(session);
+
+            S_BroadcastDisconnect p = new S_BroadcastDisconnect();
+            p.playerId = session.sessionId;
+            p.playerName = session.playerName;
+            Broadcast(p.Write());
+
             session.Disconnect();
         }
         public void Broadcast(ArraySegment<byte> segment)

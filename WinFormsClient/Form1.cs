@@ -104,6 +104,7 @@ namespace WinFormsClient
                 MessageBox.Show("서버연결해제에 실패하였습니다.");
             }
             DisplayText("서버와 연결해제 하였습니다.");
+            userList.Text = string.Empty;
             txtStatus.Text = connectStatus;
         }
 
@@ -114,7 +115,8 @@ namespace WinFormsClient
             stream.Write(p.Write());
             stream.Flush();
             connectStatus = "Disconnect";
-            
+            UserLogout();
+
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
@@ -196,7 +198,13 @@ namespace WinFormsClient
 
         private void Logout_Click(object sender, EventArgs e)
         {
+            UserLogout();
+        }
+
+        private void UserLogout()
+        {
             txtUsername.Enabled = true;
+            userName = txtUsername.Text = string.Empty;
         }
 
         private void txtMessage_TextChanged(object sender, EventArgs e)
@@ -231,6 +239,15 @@ namespace WinFormsClient
             else
                 userList.Text += text ;
         }
+        public void Remove_User(string text)
+        {
+            text += "\r\n";
+            if (userList.InvokeRequired)
+                userList.Invoke(new MethodInvoker(delegate { userList.Text = userList.Text.Replace(text, string.Empty); }));
+            else
+                userList.Text = userList.Text.Replace(text, string.Empty);
+        }
+
         public void read_UserList(string text)
         {
             text += "\r\n";
