@@ -10,3 +10,4 @@ C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ServerCore.dll
 C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
 C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ServerCore.pdb
 C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll
+C:\GitHub\Chat_Program\ServerCore\obj\Debug\net8.0\ServerCore.csproj.AssemblyReference.cache

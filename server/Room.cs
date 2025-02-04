@@ -1,10 +1,5 @@
-﻿using Microsoft.VisualBasic;
-using ServerCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ServerCore;
+using System.Data;
 
 namespace server
 {
@@ -14,6 +9,8 @@ namespace server
         List<ClientSession> _sessions = new List<ClientSession>();
         JobQueue _jobQueue = new JobQueue();
         List<ArraySegment<byte>> _pendingList = new List<ArraySegment<byte>>();
+
+
 
         public void Enter(ClientSession session)
         {
@@ -39,8 +36,14 @@ namespace server
         }
         public void Chat(ClientSession session, C_PlayerChat packet)
         {
+            // 클라이언트에서 받은 채팅을 DB에 insert
+            string sql = $"INSERT INTO log_chat(playerId, playerName, chat) VALUES('{session.sessionId}','{session.playerName}','{packet.contents}')";
+            Console.WriteLine(sql);
+            Database db = new Database();
+            db.Open();
+            db.CUDQuery(sql);
+            db.Close();
             // 클라이언트에서 받은 채팅을 룸에있는 다른 세션들에게 전송
-
             S_BroadcastChat p = new S_BroadcastChat();
             p.playerId = session.sessionId;
             p.playerName = session.playerName;
